@@ -16,11 +16,16 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         elevation: 0.0,
         backgroundColor: Colors.white,
-        leading: Container(
-          alignment: Alignment.center,
-          margin: EdgeInsets.all(10),
-          child: Icon(Icons.arrow_back_ios, color: Colors.grey, size: 30,),
-          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+        leading: GestureDetector(
+          onTap: (){
+
+          },
+          child: Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.all(10),
+            child: Icon(Icons.arrow_back_ios, color: Colors.grey, size: 30,),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+          ),
         ),
         actions: [
           Container(
