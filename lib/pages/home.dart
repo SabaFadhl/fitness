@@ -37,6 +37,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body:Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             margin: EdgeInsets.only(top: 40,left: 20,right: 20),
@@ -82,6 +83,21 @@ class HomePage extends StatelessWidget {
 
               ),
             ),
+          ),
+          SizedBox(height: 40,),
+          Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: Text('Category',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+
+                ),),
+              )
+            ],
           )
         ],
       ) ,
