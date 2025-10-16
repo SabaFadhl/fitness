@@ -52,8 +52,29 @@ class HomePage extends StatelessWidget {
                   filled: true,
                   fillColor: Colors.white,
                   contentPadding: EdgeInsets.all(15),
+                  hintText: 'Search Pancake',
+                  hintStyle: TextStyle(
+                    color: Color(0xD0D0D0FF),
+                    fontSize: 14
+                  ),
                   prefixIcon: Icon(Icons.search_rounded),
-                  suffixIcon: Icon(Icons.filter_list),
+                  suffixIcon: Container(
+                    width: 100,
+                    child: IntrinsicHeight(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          VerticalDivider(
+                            color: Color(0xD0D0D0FF),
+                            indent: 10,
+                            endIndent: 10,
+                            thickness: 0.1,
+                          ),
+                          Icon(Icons.filter_list),
+                        ],
+                      ),
+                    ),
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                     borderSide: BorderSide.none
