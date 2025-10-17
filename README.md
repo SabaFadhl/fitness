@@ -68,7 +68,7 @@ flutter run
 ---
 
 ## 🖼️ Screenshots
-<img width="1080" height="2424" alt="image" src="https://github.com/user-attachments/assets/1f92da9b-9b1a-40ab-9b38-fb62478e42c0" />
+<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/1f92da9b-9b1a-40ab-9b38-fb62478e42c0" />
 
 
 --
