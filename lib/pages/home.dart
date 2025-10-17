@@ -124,7 +124,7 @@ class HomePage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(16)
                       ),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Container(
                             width: 50,
@@ -133,10 +133,18 @@ class HomePage extends StatelessWidget {
                               color: Colors.white,
                               shape: BoxShape.circle
                             ),
-                            child: SvgPicture.asset(categories[index].iconPath)
-                            ,
+                            padding: const EdgeInsets.all(8.0),
+                            child: SvgPicture.asset(categories[index].iconPath),
 
-                          )
+                          ),
+                          Text(
+                            categories[index].name,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w400,
+                              color: Colors.black,
+                              fontSize: 14
+                            ),
+                          ),
                         ],
                       ),
                     );
